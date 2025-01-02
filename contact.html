@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="K.Brown">
+    <meta name="description" content="Contact The Taco Store">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Taco Store</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <figure>
+            <img src="image/tacos_close_up_1000x649.png" alt="Taco store" title="Tacos ready to eat!" width="1000" height="667">
+        <figcaption class="offscreen">Try the best delicious Tacos in Town</figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <article class="main__article">
+            <h2>Contact Information</h2>
+            <address>
+                <p>
+                    <strong>Taco Store</strong><br>
+                    123 Taco Street<br>
+                    Taco City, TX 12345<br>
+                    <a href="tel:123-456-7890">123-456-7890</a>
+                </p>
+            </address>
+            <hr>
+        </article>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Contact form</h2>
+            
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send us A Message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name</label>  
+                        <input class="contact__input" type="text" name="name" placeholder="your name" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email</label>
+                        <input class="contact__input" type="email" name="email" placeholder="your email" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Message</label>
+                        <textarea class="contact__textarea" name="message" id="your message" cols="30"
+                        rows="10" placeholder="type your message here"></textarea>
+                    </p>
+                </fieldset>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+       
+    </main>
+
+    <footer class="footer">
+        <p>
+           <span class="nowrap">Copyright&copy;</span>
+           <span class="nowrap"><time id="year"></time>Taco Store.</span>
+           <span class="nowrap">All rights reserved.</span>
+        </p>
+    </footer>
+</body>
+</html>
